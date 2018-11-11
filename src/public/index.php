@@ -5,5 +5,6 @@
 	<body style="text-align:center;">
 		<h1>Success!</h1>
 		<p>It's running!</p>
+		<?php phpinfo(); ?>
 	</body>
 </html>
