@@ -16,18 +16,6 @@ RUN apt-get install -y nginx
 
 # Install PHP-FPM
 RUN apt-get install -y php7.2-fpm
-
-# Install "curl"
-RUN apt-get install -y curl 
- 
-# Install the PHP pdo_mysql extention
-RUN docker-php-ext-install pdo_mysql
-
-# Install Tokenizer
-RUN docker-php-ext-install tokenizer
-
-# Install Mbstring
-RUN apt-get install php7.2-mbstring
 	
 # Create directory for PHP-FPM socket.
 RUN mkdir /run/php
