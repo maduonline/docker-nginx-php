@@ -24,7 +24,7 @@ RUN mkdir /run/php
 COPY /container /
 
 # Import app source.
-COPY /src /app
+COPY /src /application
 
 # RUN Supervisor
 CMD ["supervisord", "-n"]
